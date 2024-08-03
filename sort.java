@@ -1,8 +1,8 @@
 import java.util.Scanner;
 class sort{
-    public static void bubbleSort(int[] a,int n){
-        for(int i=0;i<n-1 ;i++)  //n-1
-        for(int j=i+1;j<n;j++)   //n(n-1)
+    public static void bubbleSort(int[] a,int n){  //O(n^2)
+        for(int i=0;i<n-1 ;i++)  
+        for(int j=i+1;j<n;j++)   
           if(a[i]>a[j]){
             int temp=a[i];
             a[i]=a[j];
@@ -12,7 +12,7 @@ class sort{
           for(int i=0;i<n;i++)
           System.out.print(a[i]+" ");
         }   
-    public static void selectionSort(int[] a,int n){
+    public static void selectionSort(int[] a,int n){  //O(n^2)
         int min;
         for(int i=0;i<n;i++){
             min=i;
@@ -29,7 +29,7 @@ class sort{
           for(int i=0;i<n;i++)
           System.out.print(a[i]+" ");
     }
-    public static void insertionSort(int[]a,int n){
+    public static void insertionSort(int[]a,int n){  //O(n^2)
         for(int i=1;i<n;i++){
             int ce=a[i];
             int j=i-1;
